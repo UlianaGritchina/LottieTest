@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		0E642390294A46880028C09C /* LottieTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E64238F294A46880028C09C /* LottieTestApp.swift */; };
-		0E642392294A46880028C09C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E642391294A46880028C09C /* ContentView.swift */; };
+		0E642392294A46880028C09C /* HappyNewYearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E642391294A46880028C09C /* HappyNewYearView.swift */; };
 		0E642394294A46880028C09C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E642393294A46880028C09C /* Assets.xcassets */; };
 		0E642397294A46880028C09C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E642396294A46880028C09C /* Preview Assets.xcassets */; };
+		0E64239F294A481C0028C09C /* newYear.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E64239E294A481C0028C09C /* newYear.json */; };
+		4BFA2131B4457692DEC3893A /* Pods_LottieTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBB4ED074CBF06EAC60FA64 /* Pods_LottieTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E64238C294A46880028C09C /* LottieTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottieTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E64238F294A46880028C09C /* LottieTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTestApp.swift; sourceTree = "<group>"; };
-		0E642391294A46880028C09C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0E642391294A46880028C09C /* HappyNewYearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyNewYearView.swift; sourceTree = "<group>"; };
 		0E642393294A46880028C09C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E642396294A46880028C09C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0E64239E294A481C0028C09C /* newYear.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newYear.json; sourceTree = "<group>"; };
+		38D990787E0BA7C122253DE0 /* Pods-LottieTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottieTest.release.xcconfig"; path = "Target Support Files/Pods-LottieTest/Pods-LottieTest.release.xcconfig"; sourceTree = "<group>"; };
+		9CBB4ED074CBF06EAC60FA64 /* Pods_LottieTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LottieTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F67240B2E374243C23060AF /* Pods-LottieTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottieTest.debug.xcconfig"; path = "Target Support Files/Pods-LottieTest/Pods-LottieTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BFA2131B4457692DEC3893A /* Pods_LottieTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +44,8 @@
 			children = (
 				0E64238E294A46880028C09C /* LottieTest */,
 				0E64238D294A46880028C09C /* Products */,
+				FC686F65487DF9B7C472C5D8 /* Pods */,
+				4409E062A1A8BE348383F148 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +60,9 @@
 		0E64238E294A46880028C09C /* LottieTest */ = {
 			isa = PBXGroup;
 			children = (
-				0E64238F294A46880028C09C /* LottieTestApp.swift */,
-				0E642391294A46880028C09C /* ContentView.swift */,
-				0E642393294A46880028C09C /* Assets.xcassets */,
-				0E642395294A46880028C09C /* Preview Content */,
+				0E6423A1294A4B1F0028C09C /* More */,
+				0E64239D294A480B0028C09C /* LottieAnimations */,
+				0E6423A0294A4B160028C09C /* Views */,
 			);
 			path = LottieTest;
 			sourceTree = "<group>";
@@ -67,6 +75,49 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0E64239D294A480B0028C09C /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				0E64239E294A481C0028C09C /* newYear.json */,
+			);
+			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
+		0E6423A0294A4B160028C09C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E642391294A46880028C09C /* HappyNewYearView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0E6423A1294A4B1F0028C09C /* More */ = {
+			isa = PBXGroup;
+			children = (
+				0E64238F294A46880028C09C /* LottieTestApp.swift */,
+				0E642395294A46880028C09C /* Preview Content */,
+				0E642393294A46880028C09C /* Assets.xcassets */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		4409E062A1A8BE348383F148 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CBB4ED074CBF06EAC60FA64 /* Pods_LottieTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC686F65487DF9B7C472C5D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F67240B2E374243C23060AF /* Pods-LottieTest.debug.xcconfig */,
+				38D990787E0BA7C122253DE0 /* Pods-LottieTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E64239A294A46880028C09C /* Build configuration list for PBXNativeTarget "LottieTest" */;
 			buildPhases = (
+				D41AAB8B9506F20DD29C39B4 /* [CP] Check Pods Manifest.lock */,
 				0E642388294A46880028C09C /* Sources */,
 				0E642389294A46880028C09C /* Frameworks */,
 				0E64238A294A46880028C09C /* Resources */,
+				ED3985079B1E61F68725A0B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,17 +180,60 @@
 			files = (
 				0E642397294A46880028C09C /* Preview Assets.xcassets in Resources */,
 				0E642394294A46880028C09C /* Assets.xcassets in Resources */,
+				0E64239F294A481C0028C09C /* newYear.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D41AAB8B9506F20DD29C39B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LottieTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED3985079B1E61F68725A0B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LottieTest/Pods-LottieTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LottieTest/Pods-LottieTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LottieTest/Pods-LottieTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E642388294A46880028C09C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E642392294A46880028C09C /* ContentView.swift in Sources */,
+				0E642392294A46880028C09C /* HappyNewYearView.swift in Sources */,
 				0E642390294A46880028C09C /* LottieTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,12 +357,13 @@
 		};
 		0E64239B294A46880028C09C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F67240B2E374243C23060AF /* Pods-LottieTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LottieTest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LottieTest/More/Preview Content\"";
 				DEVELOPMENT_TEAM = 86SKTK882J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -275,6 +372,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,12 +388,13 @@
 		};
 		0E64239C294A46880028C09C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38D990787E0BA7C122253DE0 /* Pods-LottieTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LottieTest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LottieTest/More/Preview Content\"";
 				DEVELOPMENT_TEAM = 86SKTK882J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -304,6 +403,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
